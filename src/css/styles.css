@@ -3,3 +3,18 @@ div {
     color: red;
   }
 }
+
+#main {
+  display: flex;
+  flex-direction: row;
+
+  .intro {
+    flex: 1;
+  }
+
+  .choo-picture {
+    flex: 1;
+    border: solid 1px red;
+  }
+}
+
