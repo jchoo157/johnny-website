@@ -1,20 +1,158 @@
-div {
-  h1 {
-    color: red;
-  }
+html, body {
+  margin: 0;
+  font-family: arial;
+}
+
+.white {
+  color: #ededed;
+}
+
+.light-yellow {
+  color: #ffed89;
+}
+
+.light-blue {
+  color: #4f72ff;
+}
+
+.light-green {
+  color: #68ffc0;
+}
+
+.light-grey {
+  color: #cacaca;
+}
+
+.div-shadow {
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+}
+
+#home {
 }
 
 #main {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  /*background-image: url("../../public/images/calm.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;*/
+  padding: 5px;
 
-  .intro {
-    flex: 1;
+  h1 {
+    font-family: 'Jua', sans-serif;
+    font-size: 3em;
+    color: #4d4d4d;
+    line-height: 1.5em;
+
+    .intern {
+      font-size: 0.5em;
+    }
+  }
+
+  h3 {
+    font-family: 'Jua', sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5em;
   }
 
   .choo-picture {
+    background-image: url("../../public/images/jchoo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40%;
     flex: 1;
-    border: solid 1px red;
+    order: 1;
+  }
+
+  .intro {
+    /*flex: 1;
+    order: 2;*/
+    max-width: 450px;
+  }
+}
+
+#employment {
+
+  h1 {
+    font-size: 3em;
+    color: white;
+    text-align: center;
+    font-family: 'Jua', sans-serif;
+  }
+
+  h2 {
+    color: #faab54;
+    text-align: center;
+    font-family: 'Jua', sans-serif;
+  }
+
+  h5 {
+    font-weight: bold;
+  }
+
+  .job {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .company-info {
+      text-align: center;
+      flex: 1;
+      border-right: 10px solid #46C49F;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      background: #F6F6F6;
+
+      h2 {
+        display: inline-block;
+        margin-bottom: 0px;
+        background: white;
+        padding: 10px;
+      }
+    }
+
+    .company-tasks {
+      flex: 2;
+      border-left: 10px solid #46C49F;
+      background: #F6F6F6;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-bottom: 40px;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+
+      ul {
+        list-style-type: none;
+        padding-right: 20px;
+      }
+
+      li {
+        font-weight: bold;
+        position: relative;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-left: 20px;
+        letter-spacing: 0.6px;
+        line-height: 1.5em;
+
+        &::before {
+          position: absolute;
+          left: -5px;
+          top: 0px;
+          font-size: 25px;
+          content: "•";
+          color: #46C49F;
+        }
+      }
+    }
   }
 }
 
