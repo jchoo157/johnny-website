@@ -13,8 +13,13 @@ export default class Main extends Component {
             <br/>
             <span className="peach3">I'm <span>Johnny Choo!</span></span>
           </div>
-          <h3 className="dark-brown">I have a passion for web development and always eager to learn new technologies</h3>
+          <h3 className="job-titles dark-brown">
+            Front End Engineer <span>| </span> 
+            Web Developer
+          </h3>
+          <div className="hire-me-btn">Hire Me!</div>
         </div>
+        <div className="city"/>
         {/*<div className="choo-picture"></div>*/}
       </div>
     )

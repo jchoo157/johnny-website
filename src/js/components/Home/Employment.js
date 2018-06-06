@@ -57,36 +57,38 @@ export default class Employment extends Component {
     }
   }
 
+  slideDownInfo() {
+
+  }
+
   render() {
     const {infosOpen} = this.state;
 
     return (
       <div id="employment" className="div-shadow">
-        <h1>Experience</h1>
+        <h1><div className="job-icon"/> Experience</h1>
         <ul>
-          <li>
-            <div className="company"><img src="../../../../public/images/prynt_logo.jpg"/><span className="company-name">Prynt</span></div>
-            <div className="job-title">
-              Software Developer
-              <br/>
-              <div className="info-btn" onClick={() => {this.learnMoreClick('Prynt', 'Software Developer')}}>Learn More</div>
-            </div>
+          <li className="company-row">
             <div className="company-date">
-              2018
-              <div className="vertical-line"></div>
+              <span>2018 - 2019</span>
+              {!infosOpen['Prynt'] ? <div className="vertical-line"></div> : null}
+            </div>
+            <div className="job-title">
+              <div className="company"><img src="../../../../public/images/prynt_logo.jpg"/><span className="company-name">Prynt</span></div>
+              <span className="text">Software Developer</span>
+              <div className="info-btn" onClick={() => {this.learnMoreClick('Prynt', 'Software Developer')}}>+</div>
             </div>
           </li>
           {infosOpen['Prynt'] ? <div className="company-tasks">{this.jobInfo('Prynt')}</div> : null}
 
-          <li>
-            <div className="company"><img src="../../../../public/images/prynt_logo.jpg"/><span className="company-name">Prynt (Intern)</span></div>
-            <div className="job-title">
-              Software Developer Intern
-              <br/>
-              <div className="info-btn" onClick={() => {this.learnMoreClick('Prynt (Intern)', 'Software Developer Intern')}}>Learn More</div>
-            </div>
+          <li className="company-row">
             <div className="company-date">
-              2017 - 2018
+              <span>2017 - 2018</span>
+            </div>
+            <div className="job-title">
+              <div className="company"><img src="../../../../public/images/prynt_logo.jpg"/><span className="company-name">Prynt (Intern)</span></div>
+              <span className="text">Software Developer Intern</span>
+              <div className="info-btn" onClick={() => {this.learnMoreClick('Prynt (Intern)', 'Software Developer Intern')}}>+</div>
             </div>
           </li>
           {infosOpen['Prynt (Intern)'] ? <div className="company-tasks">{this.jobInfo('Prynt')}</div> : null}
