@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 
 export default class Navigation extends Component {
   render() {
+    const {selectedSection} = this.props;
+
     return (
       <div id="navigation">
         {/*<div className="job-icon"/>

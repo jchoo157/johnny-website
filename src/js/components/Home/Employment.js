@@ -63,9 +63,10 @@ export default class Employment extends Component {
 
   render() {
     const {infosOpen} = this.state;
+    const {isSelected} = this.props;
 
     return (
-      <section id="employment">
+      <section id="employment" className={isSelected ? 'selected-section' : ''}>
         <h1>Experience</h1>
         <ul>
           <li className="company-row">

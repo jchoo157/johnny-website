@@ -2,8 +2,10 @@ import React, { Component } from 'react';
 
 export default class Portfolio extends Component {
   render() {
+    const {isSelected} = this.props;
+
     return(
-      <section id="portfolio">
+      <section id="portfolio" className={isSelected ? 'selected-section' : ''}>
         <h1>Projects</h1>
         <div className="projects">
           <div className="content">

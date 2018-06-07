@@ -3,8 +3,10 @@ import React, { Component } from 'react';
 
 export default class Main extends Component {
   render() {
+    const {selectedSection, isSelected} = this.props;
+
     return(
-      <section id="main">
+      <section id="main" className={isSelected ? 'selected-section' : ''}>
         <div className="top-main">
           <img src="../../../../public/images/jchoo.png" className="jchoo"/>
         </div>

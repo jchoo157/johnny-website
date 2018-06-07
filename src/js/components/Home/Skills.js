@@ -1,16 +1,11 @@
 import React, { Component } from 'react';
 
 export default class Skills extends Component {
-
-  onScroll() {
-    console.log('scrolled to me')
-  }
-
   render() {
-    const {style} = this.props;
+    const {isSelected} = this.props;
 
     return(
-      <section id="skills" style={style} onScroll={this.onScroll}>
+      <section id="skills" className={isSelected ? 'selected-section' : ''}>
         <h1>Skills</h1>
         <div className="development-skills">
           <ul>

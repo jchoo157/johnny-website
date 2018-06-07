@@ -8,7 +8,17 @@ import Navigation from '../components/Home/Navigation';
 import Contact from '../components/Home/Contact';
 
 export default class Home extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      selectedSection: 'none'
+    }
+  }
+
   componentDidMount() {
+    const {selectedSection} = this.state;
+    const that = this;
     $(window).scroll(function(){
       var docViewTop = $(window).scrollTop();
       var docViewBottom = docViewTop + $(window).height();
@@ -19,26 +29,25 @@ export default class Home extends Component {
         var elemBottom = elemTop + $(elem).height();
 
         if ((docViewTop <= elemBottom) && (docViewTop > (elemTop - 50))) {
-          console.log(elemId)
-          console.log(elem)
-          $('section').removeClass('div-shadow')
-          $(elem).addClass('div-shadow')
-          $('#navigation p').removeClass('highlight')
-          $('.' + elemId).addClass('highlight')
+          if (selectedSection != elemId) {
+            that.setState({selectedSection: elemId})
+          }
         }
       })
     });
   }
 
   render() {
+    const {selectedSection} = this.state;
+
     return(
       <div id="home">
-        <Navigation />
-        <Main />
-        <Employment />
-        <Skills />
-        <Portfolio />
-        <Contact />
+        <Navigation selectedSection={selectedSection}/>
+        <Main isSelected={selectedSection == 'main'}/>
+        <Employment isSelected={selectedSection == 'employment'}/>
+        <Skills isSelected={selectedSection == 'skills'}/>
+        <Portfolio isSelected={selectedSection == 'portfolio'}/>
+        <Contact isSelected={selectedSection == 'contact'}/>
       </div>
     )
   }
