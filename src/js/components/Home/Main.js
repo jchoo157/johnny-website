@@ -1,9 +1,10 @@
+var $ = require('jquery');
 import React, { Component } from 'react';
 
 export default class Main extends Component {
   render() {
     return(
-      <div id="main" className="div-shadow">
+      <section id="main">
         <div className="top-main">
           <img src="../../../../public/images/jchoo.png" className="jchoo"/>
         </div>
@@ -21,7 +22,7 @@ export default class Main extends Component {
         </div>
         <div className="city"/>
         {/*<div className="choo-picture"></div>*/}
-      </div>
+      </section>
     )
   }
 }

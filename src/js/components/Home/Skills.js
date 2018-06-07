@@ -1,10 +1,17 @@
 import React, { Component } from 'react';
 
 export default class Skills extends Component {
+
+  onScroll() {
+    console.log('scrolled to me')
+  }
+
   render() {
+    const {style} = this.props;
+
     return(
-      <div id="skills" className="div-shadow">
-        <h1><div className="skills-icon"/>Skills</h1>
+      <section id="skills" style={style} onScroll={this.onScroll}>
+        <h1>Skills</h1>
         <div className="development-skills">
           <ul>
             <li><div className="sprite react-icon"/>React</li>
@@ -20,7 +27,7 @@ export default class Skills extends Component {
             <li><div className="sprite html-css-icon"/>HTML5/CSS</li>
           </ul>
         </div>
-      </div>
+      </section>
     )
   }
 }

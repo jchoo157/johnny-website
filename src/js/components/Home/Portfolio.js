@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 export default class Portfolio extends Component {
   render() {
     return(
-      <div id="portfolio" className="div-shadow">
+      <section id="portfolio">
         <h1>Projects</h1>
         <div className="projects">
           <div className="content">
@@ -64,7 +64,7 @@ export default class Portfolio extends Component {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     )
   }
 }

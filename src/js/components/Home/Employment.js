@@ -65,8 +65,8 @@ export default class Employment extends Component {
     const {infosOpen} = this.state;
 
     return (
-      <div id="employment" className="div-shadow">
-        <h1><div className="job-icon"/> Experience</h1>
+      <section id="employment">
+        <h1>Experience</h1>
         <ul>
           <li className="company-row">
             <div className="company-date">
@@ -93,7 +93,7 @@ export default class Employment extends Component {
           </li>
           {infosOpen['Prynt (Intern)'] ? <div className="company-tasks">{this.jobInfo('Prynt')}</div> : null}
         </ul>
-      </div>
+      </section>
     )
   }
 }
