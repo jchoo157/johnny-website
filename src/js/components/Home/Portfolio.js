@@ -5,7 +5,7 @@ export default class Portfolio extends Component {
     const {isSelected} = this.props;
 
     return(
-      <section id="portfolio" className={isSelected ? 'selected-section' : ''}>
+      <section id="portfolio" className={isSelected ? 'selected-section selected-content-darken' : ''}>
         <h1>Projects</h1>
         <div className="projects">
           <div className="content">

@@ -66,7 +66,7 @@ export default class Employment extends Component {
     const {isSelected} = this.props;
 
     return (
-      <section id="employment" className={isSelected ? 'selected-section' : ''}>
+      <section id="employment" className={isSelected ? 'selected-section selected-content-darken' : ''}>
         <h1>Experience</h1>
         <ul>
           <li className="company-row">

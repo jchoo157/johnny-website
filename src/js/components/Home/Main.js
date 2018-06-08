@@ -1,5 +1,5 @@
-var $ = require('jquery');
 import React, { Component } from 'react';
+import SocialMedia from './SocialMedia';
 
 export default class Main extends Component {
   render() {
@@ -8,6 +8,7 @@ export default class Main extends Component {
     return(
       <section id="main" className={isSelected ? 'selected-section' : ''}>
         <div className="top-main">
+          <SocialMedia />
           <img src="../../../../public/images/jchoo.png" className="jchoo"/>
         </div>
         <div className="intro">
@@ -18,9 +19,11 @@ export default class Main extends Component {
           </div>
           <h3 className="job-titles dark-brown">
             Front End Engineer <span>| </span> 
-            Web Developer
+            San Francisco
           </h3>
-          <div className="hire-me-btn">Hire Me!</div>
+          <form target="_blank" method="get" action="../../../../public/johnnychoo2018.pdf">
+            <button className="main-btn" type="submit">Resume</button>
+          </form>
         </div>
         <div className="city"/>
         {/*<div className="choo-picture"></div>*/}

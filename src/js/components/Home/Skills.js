@@ -5,7 +5,7 @@ export default class Skills extends Component {
     const {isSelected} = this.props;
 
     return(
-      <section id="skills" className={isSelected ? 'selected-section' : ''}>
+      <section id="skills" className={isSelected ? 'selected-section selected-content-darken' : ''}>
         <h1>Skills</h1>
         <div className="development-skills">
           <ul>
