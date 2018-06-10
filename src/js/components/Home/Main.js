@@ -9,7 +9,7 @@ export default class Main extends Component {
       <section id="main" className={isSelected ? 'selected-section' : ''}>
         <div className="top-main">
           <SocialMedia />
-          <img src="../../../../public/images/jchoo.png" className="jchoo"/>
+          <img src={require("../../../../public/images/jchoo.png")} className="jchoo"/>
         </div>
         <div className="intro">
           <div className="greeting">

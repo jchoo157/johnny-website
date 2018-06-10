@@ -75,7 +75,7 @@ export default class Employment extends Component {
               {!infosOpen['Prynt'] ? <div className="vertical-line"></div> : null}
             </div>
             <div className="job-title">
-              <div className="company"><img src="../../../../public/images/prynt_logo.jpg"/><span className="company-name">Prynt</span></div>
+              <div className="company"><img src={require("../../../../public/images/prynt_logo.jpg")}/><span className="company-name">Prynt</span></div>
               <span className="text">Software Developer</span>
               <div className="info-btn" onClick={() => {this.learnMoreClick('Prynt', 'Software Developer')}}>+</div>
             </div>
@@ -87,7 +87,7 @@ export default class Employment extends Component {
               <span>2017 - 2018</span>
             </div>
             <div className="job-title">
-              <div className="company"><img src="../../../../public/images/prynt_logo.jpg"/><span className="company-name">Prynt (Intern)</span></div>
+              <div className="company"><img src={require("../../../../public/images/prynt_logo.jpg")}/><span className="company-name">Prynt (Intern)</span></div>
               <span className="text">Software Developer Intern</span>
               <div className="info-btn" onClick={() => {this.learnMoreClick('Prynt (Intern)', 'Software Developer Intern')}}>+</div>
             </div>
