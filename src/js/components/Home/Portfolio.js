@@ -11,7 +11,7 @@ export default class Portfolio extends Component {
           <div className="content">
             <div className="grid">
               <figure className="effect-lily grow">
-                <img className='league-slide' src="../../../../public/images/portfolio/leaguestats.png"/>
+                <img className='league-slide' src={require("../../../../public/images/portfolio/leaguestats.png")}/>
                 <figcaption>
                   <div className="bg">
                     <h2>League <span>Stats</span></h2>
@@ -24,7 +24,7 @@ export default class Portfolio extends Component {
             </div>
             <div className="grid">
               <figure className="effect-lily grow">
-                <img className='guide-slide' src="../../../../public/images/portfolio/guideme.png"/>
+                <img className='guide-slide' src={require("../../../../public/images/portfolio/guideme.png")}/>
                 <figcaption>
                   <div className="bg">
                     <h2>Guide <span>Me</span></h2>
@@ -38,7 +38,7 @@ export default class Portfolio extends Component {
 
             <div className="grid">
               <figure className="effect-lily grow">
-                <img className='art-slide' src="../../../../public/images/portfolio/art-gallery.png"/>
+                <img className='art-slide' src={require("../../../../public/images/portfolio/art-gallery.png")}/>
                 <figcaption>
                   <div>
                     <h2>Art <span>Gallery</span></h2>
@@ -53,7 +53,7 @@ export default class Portfolio extends Component {
             <div className="grid">
               
               <figure className="effect-lily grow">
-                <img className='veggie-slide' src="../../../../public/images/portfolio/veggiemon.png"/>
+                <img className='veggie-slide' src={require("../../../../public/images/portfolio/veggiemon.png")}/>
                 <figcaption>
                   <div>
                     <h2>Veggiemon <span>Grow</span></h2>
