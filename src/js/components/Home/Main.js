@@ -21,7 +21,7 @@ export default class Main extends Component {
             Front End Engineer <span>| </span> 
             San Francisco
           </h3>
-          <form target="_blank" method="get" action="../../../../public/johnnychoo2018.pdf">
+          <form target="_blank" method="get" action={require("../../../../public/johnnychoo2018.pdf")}>
             <button className="main-btn" type="submit">Resume</button>
           </form>
         </div>
