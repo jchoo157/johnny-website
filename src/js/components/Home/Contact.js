@@ -11,10 +11,12 @@ export default class Contact extends Component {
           <div className="container">
             <div className="contact-linkedin">
               <a href="https://www.linkedin.com/in/jchoo157" target="_blank"><img src="../../../../public/images/icons/linkedin-big-icon.png"/></a>
+              <br/>
               <a href="https://www.linkedin.com/in/jchoo157" target="_blank" className="no-underline">jchoo157</a>
             </div>
             <div className="contact-email">
               <a href="mailto:jchoo156@gmail.com"><img src="../../../../public/images/icons/email-icon.png"/></a>
+              <br/>
               <a href="mailto:jchoo156@gmail.com" className="no-underline">jchoo156@gmail.com</a>
             </div>
           </div>

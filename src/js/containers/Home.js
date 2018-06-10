@@ -35,6 +35,8 @@ export default class Home extends Component {
         }
       })
     });
+
+    $('.company-tasks').slideDown('slow', function() {})
   }
 
   render() {
