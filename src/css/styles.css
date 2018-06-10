@@ -617,8 +617,8 @@ section {
     font-size: 1.8em;
     text-align: left;
     font-family: "Source Sans Pro", arial, sans-serif;
-    color: #847193;
     margin-left: 10px;
+    color: #b8acc4;
 
     @media(max-width: 600px) {
       font-size: 1.5em;
