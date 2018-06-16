@@ -382,11 +382,6 @@ section {
     }
   }
 
-  form {
-    margin: 0 auto;
-    z-index: 9;
-  }
-
   .main-btn {
     border: 2px solid #FCA599;
     padding-left: 40px;
@@ -404,6 +399,9 @@ section {
     transition: box-shadow 2s;
     font-size: 1em;
     box-sizing: border-box;
+    margin: 0 auto;
+    z-index: 9;
+    text-decoration: none;
 
     &:hover {
       color: white;

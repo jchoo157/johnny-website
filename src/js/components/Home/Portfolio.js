@@ -11,14 +11,14 @@ export default class Portfolio extends Component {
           <div className="content">
             <div className="grid">
               <figure className="effect-lily grow">
-                <img className='league-slide' src={require("../../../../public/images/portfolio/leaguestats.png")}/>
+                <img className='league-slide' src={require("../../../../public/images/portfolio/simple-task-desktop.png")}/>
                 <figcaption>
                   <div className="bg">
-                    <h2>League <span>Stats</span></h2>
+                    <h2>Simple <span>Task</span></h2>
                     <br/>
-                    <p>Look up recent gaming history of players</p>
+                    <p>Easily keep track of your tasks</p>
                   </div>
-                <a href="https://leaguestats2016.herokuapp.com" target="_blank"></a>
+                <a href="https://simple-task-todo.herokuapp.com" target="_blank"></a>
                 </figcaption>     
               </figure>
             </div>
