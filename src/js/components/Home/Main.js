@@ -22,8 +22,8 @@ export default class Main extends Component {
             San Francisco
           </h3>
           
-          <a className="main-btn" href={require("../../../../public/johnnychoo2018.pdf")} download="johnny-choo-resume">
-            Download Resume
+          <a className="main-btn" href='https://drive.google.com/file/d/1kFsCIxJIu4s8xMFdW7u5ZUPr7FWn-OBa/view?usp=sharing' target="_blank">
+            View Resume
           </a>
         </div>
         <div className="city"/>
