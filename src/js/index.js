@@ -1,4 +1,3 @@
-var $ = require('jquery');
 require('../css/styles.css');
 import React from 'react';
 import ReactDOM from 'react-dom';

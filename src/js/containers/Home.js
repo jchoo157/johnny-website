@@ -1,4 +1,3 @@
-var $ = require('jquery');
 import React, { Component } from 'react';
 import Main from '../components/Home/Main';
 import Employment from '../components/Home/Employment';
