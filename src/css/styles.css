@@ -1,6 +1,7 @@
 html, body {
   margin: 0;
   font-family: arial;
+  -webkit-text-size-adjust: none;
 }
 
 .white {
@@ -136,6 +137,10 @@ section {
         letter-spacing: 0.8px;
         font-weight: bold;
       }
+
+      @media(max-width: 413px) {
+        font-size: 0.7em;
+      }
     }
 
     .contact-linkedin {
@@ -183,8 +188,6 @@ section {
 
       &::after {
         color: #DD4A31;
-        font-size: 25px;
-        line-height: 17px;
         position: absolute;
         right: 9px;
       }
@@ -360,6 +363,7 @@ section {
       margin-right: auto;
       font-family: "Source Sans Pro", arial, sans-serif;
       text-align: center;
+      margin-bottom: 25px;
 
       span {
         color: #777777;
