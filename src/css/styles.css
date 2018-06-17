@@ -510,8 +510,12 @@ section {
       border-right: 2px solid #dbdbdb;
       height: 100%;
       position: absolute;
-      right: 19px;
+      right: 19.5px;
       bottom: -52px;
+
+      @media(max-width: 398px) {
+        bottom: -68px;
+      }
     }
 
     li.company-row {
@@ -535,6 +539,14 @@ section {
   .job-title, .company-date {
     font-family: "Source Sans Pro", arial, sans-serif;
     color: #5C4F67;
+
+    .dot {
+      background: #68ffc0;
+      padding: 0px 6px;
+      border-radius: 50%;
+      position: absolute;
+      right: 12px;
+    }
 
     span.text {
       margin-left: 40px;
@@ -574,6 +586,7 @@ section {
       text-align: center;
       height: 20px;
       width: 20px;
+      padding-left: 1px;
       line-height: 21px;
       margin-left: 10px;
       border-radius: 50%;
@@ -598,7 +611,7 @@ section {
     padding-top: 29px;
     font-size: 0.8em;
 
-    &::after {
+    /*&::after {
       content: "●";
       margin-left: 10px;
       color: #68ffc0;
@@ -606,7 +619,7 @@ section {
       font-size: 30px;
       right: 10px;
       bottom: 16px;
-    }
+    }*/
   }
 
   h5 {

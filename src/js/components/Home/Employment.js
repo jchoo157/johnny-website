@@ -72,6 +72,7 @@ export default class Employment extends Component {
           <li className="company-row">
             <div className="company-date">
               <span>2018 - 2019</span>
+              <span className="dot">&nbsp;</span>
               {!infosOpen['Prynt'] ? <div className="vertical-line"></div> : null}
             </div>
             <div className="job-title">
@@ -85,6 +86,7 @@ export default class Employment extends Component {
           <li className="company-row">
             <div className="company-date">
               <span>2017 - 2018</span>
+              <span className="dot">&nbsp;</span>
             </div>
             <div className="job-title">
               <div className="company"><img src={require("../../../../public/images/prynt_logo.jpg")}/><span className="company-name">Prynt (Intern)</span></div>
