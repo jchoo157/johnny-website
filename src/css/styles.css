@@ -156,85 +156,128 @@ section {
 
 }
 
-#navigation {
-  position: fixed;
-  z-index: 9;
-  right: 20px;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -o-transform: tranlslateY(-50%);
-  transform: translateY(-50%);
+.nav-container {
+  position: relative;
 
-  p {
-    color: white;
-    width: 100px;
-    cursor: pointer;
-    font-size: 0.9em;
-    text-shadow: 1px 1px 1px black;
-    letter-spacing: 1px;
+  .mobile-nav {
+    position: fixed;
+    z-index: 9;
 
-    &.highlight {
-      color: black;
-      font-size: 1em;
-      text-shadow: none;
-      background: white;
-      border-radius: 10px;
-      padding-left: 10px;
-      padding-top: 3px;
-      padding-bottom: 2px;
-      opacity: 0.7;
+    .nav-icon {
+      position: fixed; 
+      background-image: url("../../public/images/icons/menu-icon.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: 50px;
+      width: 50px;
+      right: 10px;
+      top: 10px;
+      cursor: pointer;
+    }
+
+    .navigation {
+      right: 8px;
+      top: 60px;
+    }
+  }
+
+  .desktop-nav {
+    .navigation {
+      top: 50%;
+      right: 20px;
+      -ms-transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -o-transform: tranlslateY(-50%);
+      transform: translateY(-50%);
+    }
+  }
+
+  @media(min-width: 601px) {
+    .mobile-nav {
+      display:none;
+    }
+  }
+
+  @media(max-width: 600px) {
+    .desktop-nav {
+      display:none;
+    }
+  }
+
+  .navigation {
+    position: fixed;
+    z-index: 9;
+
+    p {
+      color: white;
+      width: 100px;
+      cursor: pointer;
+      font-size: 0.9em;
+      text-shadow: 1px 1px 1px black;
+      letter-spacing: 1px;
+
+      &.highlight {
+        color: black;
+        font-size: 1em;
+        text-shadow: none;
+        background: white;
+        border-radius: 10px;
+        padding-left: 10px;
+        padding-top: 3px;
+        padding-bottom: 2px;
+        opacity: 0.7;
+
+        &::after {
+          color: #DD4A31;
+          position: absolute;
+          right: 9px;
+        }
+      }
 
       &::after {
-        color: #DD4A31;
-        position: absolute;
-        right: 9px;
+        content: "●";
+        float: right;
+        color: #bfbfbf;
+        text-shadow: none;
+      }
+
+      &:hover {
+        color: black;
+        text-shadow: none;
+
+        &::after {
+          color: #DD4A31;
+        }
       }
     }
 
-    &::after {
-      content: "●";
-      float: right;
-      color: #bfbfbf;
-      text-shadow: none;
+    .job-icon, .skills-icon, .project-icon {
+      vertical-align: middle;
+      height: 50px;
+      width: 50px;
     }
 
-    &:hover {
-      color: black;
-      text-shadow: none;
-
-      &::after {
-        color: #DD4A31;
-      }
+    .job-icon {
+      background-image: url('../../public/images/icons/job-icon.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
     }
-  }
 
-  .job-icon, .skills-icon, .project-icon {
-    vertical-align: middle;
-    height: 50px;
-    width: 50px;
-  }
+    .skills-icon {
+      background-image: url('../../public/images/icons/skills-icon.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
 
-  .job-icon {
-    background-image: url('../../public/images/icons/job-icon.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-  }
-
-  .skills-icon {
-    background-image: url('../../public/images/icons/skills-icon.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-  }
-
-  .project-icon {
-    background-image: url('../../public/images/icons/project-icon.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+    .project-icon {
+      background-image: url('../../public/images/icons/project-icon.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
   }
 }
 

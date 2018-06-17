@@ -3,7 +3,7 @@ import Main from '../components/Home/Main';
 import Employment from '../components/Home/Employment';
 import Skills from '../components/Home/Skills';
 import Portfolio from '../components/Home/Portfolio';
-import Navigation from '../components/Home/Navigation';
+import ResponsiveNavigation from '../components/Home/ResponsiveNavigation';
 import Contact from '../components/Home/Contact';
 
 export default class Home extends Component {
@@ -43,7 +43,7 @@ export default class Home extends Component {
 
     return(
       <div id="home">
-        <Navigation selectedSection={selectedSection}/>
+        <ResponsiveNavigation selectedSection={selectedSection}/>
         <Main isSelected={selectedSection == 'main'}/>
         <Employment isSelected={selectedSection == 'employment'}/>
         <Skills isSelected={selectedSection == 'skills'}/>

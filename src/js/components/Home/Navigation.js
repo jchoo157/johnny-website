@@ -16,7 +16,7 @@ export default class Navigation extends Component {
     const {selectedSection} = this.props;
 
     return (
-      <div id="navigation">
+      <div className="navigation">
         <p className={"main" + " " + (selectedSection == 'main' ? 'highlight' : '')} onClick={(e) => this.smoothScrollToSection(e)}>Main</p>
         <p className={"employment" + " " + (selectedSection == 'employment' ? 'highlight' : '')} onClick={(e) => this.smoothScrollToSection(e)}>Jobs</p>
         <p className={"skills" + " " + (selectedSection == 'skills' ? 'highlight' : '')} onClick={(e) => this.smoothScrollToSection(e)}>Skills</p>
